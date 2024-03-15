@@ -1,5 +1,5 @@
 function pageLoad() {
-	const content = document.querySelector("#content");
+	const CONTENT = document.querySelector("#content");
 
 	const H1 = document.createElement("h1");
 	const P = document.createElement("p");
@@ -9,9 +9,9 @@ function pageLoad() {
 	P.textContent =
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis soluta in error ad nulla voluptates, esse reiciendis est voluptatibus obcaecati distinctio provident maxime quia. Veniam officiis dicta omnis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati repellat inventore impedit aliquam est commodi blanditiis quo magni minus, repudiandae quae suntquaerat tempora dolores non voluptatibus eaque eius.";
 	IMG.src = "/src/logo.png";
-	content.appendChild(H1);
-	content.appendChild(P);
-	content.appendChild(IMG);
+	CONTENT.appendChild(H1);
+	CONTENT.appendChild(P);
+	CONTENT.appendChild(IMG);
 }
 
 export default pageLoad;
