@@ -1,3 +1,7 @@
-console.log("test");
+import pageLoad from "./page-load";
 
-// import logo from "/logo.png";
+function component() {
+	// Load homepage content
+	component.append(pageLoad());
+}
+document.body.append(component());
