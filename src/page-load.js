@@ -1,3 +1,5 @@
+import homeImage from "/src/images/logo.png";
+
 function pageLoad() {
 	const CONTENT = document.querySelector("#content");
 
@@ -8,7 +10,7 @@ function pageLoad() {
 	H1.textContent = "Restaurant Page";
 	P.textContent =
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque officiis soluta in error ad nulla voluptates, esse reiciendis est voluptatibus obcaecati distinctio provident maxime quia. Veniam officiis dicta omnis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati repellat inventore impedit aliquam est commodi blanditiis quo magni minus, repudiandae quae suntquaerat tempora dolores non voluptatibus eaque eius.";
-	IMG.src = "/src/images/logo.png";
+	IMG.src = homeImage;
 	CONTENT.appendChild(H1);
 	CONTENT.appendChild(P);
 	CONTENT.appendChild(IMG);
