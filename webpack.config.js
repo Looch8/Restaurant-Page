@@ -7,9 +7,20 @@ module.exports = {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist"),
 	},
-	//  Images
+
 	module: {
-		rules: [{ test: /\.(png|svg|jpg|jpeg|gif)$/i, type: "asset/resource" }],
+		rules: [
+			{
+				// Loading css
+				test: /\.css$/i,
+				use: ["style-loader", "css-loader"],
+			},
+			{
+				// Loading images
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: "asset/resource",
+			},
+		],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
