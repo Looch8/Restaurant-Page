@@ -1,6 +1,7 @@
 import pageLoad from "./page-load";
 import menu from "./menu";
 import contact from "./contact";
+import "./style.css";
 
 const buttons = document.querySelectorAll("button");
 const CONTENT = document.querySelector("#content");
