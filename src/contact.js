@@ -1,4 +1,4 @@
-import food from "/src/images/food.avif";
+import food from "./images/food.avif";
 
 function contact() {
 	const CONTENT = document.querySelector("#content");

@@ -1,4 +1,4 @@
-import homeImage from "/src/images/logo.png";
+import homeImage from "./images/logo.png";
 
 function pageLoad() {
 	const CONTENT = document.querySelector("#content");
