@@ -5,7 +5,7 @@ import contact from "./contact";
 const buttons = document.querySelectorAll("button");
 const CONTENT = document.querySelector("#content");
 
-function component() {
+function render() {
 	// Load homepage content
 	pageLoad();
 
@@ -24,4 +24,4 @@ function component() {
 	});
 }
 
-component();
+render();
