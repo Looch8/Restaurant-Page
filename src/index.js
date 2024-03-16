@@ -9,6 +9,7 @@ function component() {
 	// Load homepage content
 	pageLoad();
 
+	// Render following modules based on button click
 	buttons.forEach((button) => {
 		button.addEventListener("click", () => {
 			CONTENT.replaceChildren();
@@ -16,6 +17,8 @@ function component() {
 				menu();
 			} else if (button.id == "contact") {
 				contact();
+			} else if (button.id == "home") {
+				pageLoad();
 			}
 		});
 	});
